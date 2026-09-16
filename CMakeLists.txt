@@ -6,7 +6,8 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(Introduction main.cpp)
 add_executable(Integers_doubles Integers_doubles.cpp)
 add_executable(Ex1_Swap_Variable_Values Ex1_Swap_Variable_Values.cpp)
- add_executable(Constants Constants.cpp)
+add_executable(Constants Constants.cpp)
+add_executable(Mathematical_Expressions Mathematical_Expressions.cpp)
 
 target_include_directories(Introduction SYSTEM PRIVATE
         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
@@ -20,4 +21,7 @@ target_include_directories(Ex1_Swap_Variable_Values SYSTEM PRIVATE
 )
 
 target_include_directories(Constants SYSTEM PRIVATE
+        /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1)
+
+target_include_directories(Mathematical_Expressions SYSTEM PRIVATE
         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1)
