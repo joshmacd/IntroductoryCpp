@@ -9,6 +9,7 @@ add_executable(Ex1_Swap_Variable_Values Ex1_Swap_Variable_Values.cpp)
 add_executable(Constants Constants.cpp)
 add_executable(Mathematical_Expressions Mathematical_Expressions.cpp)
 add_executable(Ex2_Calculating_Taxes Ex2_Calculating_Taxes.cpp)
+add_executable(Reading_And_Writing_Console Reading_And_Writing_Console.cpp)
 
 target_include_directories(Introduction SYSTEM PRIVATE
         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
@@ -29,4 +30,7 @@ target_include_directories(Mathematical_Expressions SYSTEM PRIVATE
 
 
 target_include_directories( Ex2_Calculating_Taxes SYSTEM PRIVATE
+        /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1)
+
+target_include_directories( Reading_And_Writing_Console SYSTEM PRIVATE
         /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1)
